@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GlobalStyles from './styles/GlobalStyle';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <Router>
+      <GlobalStyles />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
